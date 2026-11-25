@@ -1,0 +1,13 @@
+<% if(success && success.length){%>  <!--Since success is an array so the empty alert is visible to avoid this we are including the success lenght also to check the condition-->
+    <div class="alert alert-success alert-dismissible fade show col-6 offset-3" role="alert">
+        <%= success %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% }%>
+
+<% if(error && error.length){%>  <!--Since success is an array so the empty alert is visible to avoid this we are including the success lenght also to check the condition-->>
+    <div class="alert alert-danger alert-dismissible fade show col-6 offset-3" role="alert">
+        <%= error %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% }%>
